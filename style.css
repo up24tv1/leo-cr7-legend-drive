@@ -72,3 +72,14 @@ body.racing #keyart{display:none}
 
 @media (max-height:500px) and (orientation:landscape){.pad{width:84px;height:84px;font-size:26px}#R{left:calc(env(safe-area-inset-left) + 108px)}.btn{width:70px;height:70px;font-size:10px}#N{bottom:calc(env(safe-area-inset-bottom) + 96px)}
  .speedo{width:112px;right:calc(env(safe-area-inset-right) + 96px)}.speedo svg{width:112px;height:112px}.sv{top:26px}.sv b{font-size:26px}#minimap{width:64px;height:64px}#pos{font-size:24px}.chip.wide{max-width:260px}}
+/* v3 animated title clip: light sweep, embers, logo shine */
+#keyart:before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(105deg,#0000 35%,#ffd98a33 45%,#fff6 50%,#ffd98a33 55%,#0000 65%);background-size:300% 100%;mix-blend-mode:screen;animation:sweep 7s ease-in-out infinite}
+@keyframes sweep{0%{background-position:120% 0}55%,100%{background-position:-60% 0}}
+.logo{background:linear-gradient(100deg,#f6d77a 0%,#fff 18%,#d8aa2e 30%,#f6d77a 60%,#b8861b 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 5s linear infinite,rise .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes shine{0%{background-position:100% 0}100%{background-position:-150% 0}}
+@keyframes rise{0%{opacity:0;transform:translateY(24px) scale(.96);letter-spacing:.2em}100%{opacity:1;transform:none}}
+#embers{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+#embers i{position:absolute;bottom:-10px;width:4px;height:4px;border-radius:50%;background:#ffcc66;box-shadow:0 0 8px 2px #ff9a2a;opacity:0;animation:ember linear infinite}
+@keyframes ember{0%{transform:translate(0,0);opacity:0}10%{opacity:.9}100%{transform:translate(var(--dx),-105vh);opacity:0}}
+body.racing #embers{display:none}
+#keyart.hide+#embers{display:none}
