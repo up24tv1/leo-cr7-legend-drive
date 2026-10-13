@@ -84,3 +84,4 @@ body.racing #keyart{display:none}
 body.racing #embers{display:none}
 #keyart.hide+#embers{display:none}
 @media (orientation:landscape){#keyart{background-position:100% 30%}}@media (orientation:portrait){#keyart{background-position:50% 0}}
+@media (orientation:portrait){#keyart{background-size:auto 86%;background-position:50% 100%;background-color:#2b2233}}
