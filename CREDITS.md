@@ -44,3 +44,8 @@ Original concept image made with Z-Image Turbo (HF Space), converted to 3D with 
 three.js SMAAPass / ShaderPass (MIT), glTF-Transform (MIT), meshoptimizer (MIT). Terrain is procedural (own code).
 ### Removed in v3
 Kenney Car Kit models are no longer used (the Kenney colormap is still loaded by the legacy loader path; CC0).
+
+## v3.1 art refresh
+- Title key art (landscape + iPhone portrait crop) and Leo portrait: Z-Image Turbo (Tongyi-MAI, Apache-2.0) via Hugging Face Space; portrait upscaled with Real-ESRGAN (BSD-3). Leo is an original character; a small generic emblem on the AI car was blurred.
+- Track cards (Sunset Highway, Miami Neon Streets, Mountain Road, Coastal Circuit): Pollinations.ai (FLUX.1-schnell, Apache-2.0); the Pollinations watermark strip was cropped off.
+- App icon: drawn procedurally in Python/PIL (carbon-fibre weave + gold 7).
