@@ -83,3 +83,4 @@ body.racing #keyart{display:none}
 @keyframes ember{0%{transform:translate(0,0);opacity:0}10%{opacity:.9}100%{transform:translate(var(--dx),-105vh);opacity:0}}
 body.racing #embers{display:none}
 #keyart.hide+#embers{display:none}
+@media (orientation:landscape){#keyart{background-position:100% 30%}}@media (orientation:portrait){#keyart{background-position:50% 0}}
